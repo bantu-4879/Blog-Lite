@@ -7,6 +7,7 @@
         width="1920"
         height="2193"
       />
+      
       <div class="card__content | flow">
         <div class="card__content--container | flow">
           <h2 class="card__title">{{ blog[1] }}</h2>
@@ -14,6 +15,7 @@
             {{ blog[3] }}
           </p>
         </div> 
+        
         <button class="card__button"><router-link :to="{ name: 'theblog', params: { id: blog[0] } }" class="card__button">Read more</router-link></button>
         
       </div>
