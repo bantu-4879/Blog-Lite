@@ -4,6 +4,7 @@ import axios from 'axios';
 
 <template>
     <div class="login-box">
+        
   <h2>Edit Blog</h2>
   <form>
     <div class="user-box">
