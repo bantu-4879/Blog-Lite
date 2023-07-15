@@ -3,31 +3,31 @@ import axios from 'axios';
 </script>
 
 <template>
-    <div class="login-box">
+    <div class="login-box">      
+      <h2>Edit Blog</h2>
         
-  <h2>Edit Blog</h2>
-  <form>
-    <div class="user-box">
-      <input v-model="title" type="text" id="title" required= true :placeholder="`${title}`">
-      <label>Title</label>
+      <form>
+        <div class="user-box">
+          <input v-model="title" type="text" id="title" required= true :placeholder="`${title}`">
+          <label>Title</label>
+        </div>
+        <div class="user-box">
+          <input v-model="caption" type="text" id="caption" required= true :placeholder="`${caption}`">
+          <label>Caption</label>
+        </div>
+        <div class="user-box">
+          <input v-model="image_url" type="text" id="image_url" required= true :placeholder="`${image_url}`">
+          <label>Image URL</label>
+        </div>
+        <a @click.prevent="submitForm">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </form>
     </div>
-    <div class="user-box">
-      <input v-model="caption" type="text" id="caption" required= true :placeholder="`${caption}`">
-      <label>Caption</label>
-    </div>
-    <div class="user-box">
-      <input v-model="image_url" type="text" id="image_url" required= true :placeholder="`${image_url}`">
-      <label>Image URL</label>
-    </div>
-    <a @click.prevent="submitForm">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      Submit
-    </a>
-  </form>
-</div>
 </template>
 
 
