@@ -19,9 +19,11 @@ import axios from 'axios';
           <RouterLink :to="{ name: 'report', params: { author: id }}">Export Data</RouterLink>
           <RouterLink :to="{ name: 'follower', params: { author: id }}">Followers</RouterLink>
         </nav>
+        
     </header>
 
   <div class="login-box" v-if="!verified">
+      
     <h2>Enter the Credentials</h2>
     <form>
       <div class="user-box">
@@ -51,6 +53,7 @@ import axios from 'axios';
       </div>
 
     </form>
+      
   </div>
 
   
