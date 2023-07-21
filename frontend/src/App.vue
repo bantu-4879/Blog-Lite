@@ -9,6 +9,7 @@ import axios from 'axios';
       <div class="heading">
         <div class="heading-text">Feed</div>
       </div>
+        
       <nav>
           <RouterLink :to="{ name: 'home', params: { author: id } }">Home</RouterLink>
           <RouterLink :to="{ name: 'profile', params: { name: username} }">Profile</RouterLink>
